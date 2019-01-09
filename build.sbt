@@ -8,7 +8,9 @@ lazy val root = project
   .settings(
     name := "overrepresentation",
     libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0" % "test",
-    libraryDependencies += "io.github.pityka" %% "fileutils" % "1.1.1")
+    libraryDependencies += "io.github.pityka" %% "fileutils" % "1.2.2")
+
+publishTo := sonatypePublishTo.value    
 
 pomExtra in Global := {
   <url>https://pityka.github.io/overrepresentation</url>
