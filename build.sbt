@@ -1,6 +1,6 @@
 val commonsettings = Seq(version := "1.0.0",
                          organization := "io.github.pityka",
-                         scalaVersion := "2.11.8")
+                         scalaVersion := "2.12.8")
 
 lazy val root = project
   .in(file("."))
@@ -8,8 +8,7 @@ lazy val root = project
   .settings(
     name := "overrepresentation",
     libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0" % "test",
-    libraryDependencies += "io.github.pityka" %% "fileutils" % "1.0.0")
-  .settings(reformatOnCompileSettings: _*)
+    libraryDependencies += "io.github.pityka" %% "fileutils" % "1.1.1")
 
 pomExtra in Global := {
   <url>https://pityka.github.io/overrepresentation</url>
