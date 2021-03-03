@@ -1,16 +1,19 @@
-val commonsettings = Seq(version := "1.0.0",
-                         organization := "io.github.pityka",
-                         scalaVersion := "2.12.8")
+val commonsettings = Seq(
+  version := "1.0.1",
+  organization := "io.github.pityka",
+  scalaVersion := "2.13.5"
+)
 
 lazy val root = project
   .in(file("."))
   .settings(commonsettings: _*)
   .settings(
     name := "overrepresentation",
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0" % "test",
-    libraryDependencies += "io.github.pityka" %% "fileutils" % "1.2.2")
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.5" % "test",
+    libraryDependencies += "io.github.pityka" %% "fileutils" % "1.2.3"
+  )
 
-publishTo := sonatypePublishTo.value    
+publishTo := sonatypePublishTo.value
 
 pomExtra in Global := {
   <url>https://pityka.github.io/overrepresentation</url>
