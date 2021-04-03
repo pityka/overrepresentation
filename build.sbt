@@ -1,7 +1,8 @@
 val commonsettings = Seq(
   version := "1.0.1",
   organization := "io.github.pityka",
-  scalaVersion := "2.13.5"
+  scalaVersion := "2.13.5",
+  crossScalaVersions := Seq("2.12.13", "2.13.5")
 )
 
 lazy val root = project
